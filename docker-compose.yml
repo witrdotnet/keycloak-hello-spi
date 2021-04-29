@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    keycloak:
+        container_name: keycloak
+        image: quay.io/keycloak/keycloak:12.0.4
+        environment: 
+            - KEYCLOAK_USER=admin
+            - KEYCLOAK_PASSWORD=admin
+        ports: 
+            - 8080:8080
+        volumes: 
+            - type: bind  # bind mount type prevents file changes
+              source: ./target/
+              target: /opt/jboss/keycloak/standalone/deployments
+    
