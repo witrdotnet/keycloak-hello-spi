@@ -58,8 +58,7 @@ Deployed "hello-spi-1.0-SNAPSHOT.jar" (runtime-name : "hello-spi-1.0-SNAPSHOT.ja
 * Command
 
 ```sh
-curl \
-   -X GET \
+curl -X GET \
   -d "client_id=admin-cli" \
   -d "username=admin" \
   -d "password=admin" \
