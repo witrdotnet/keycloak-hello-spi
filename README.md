@@ -31,7 +31,7 @@ There are several ways to check deployed service:
 * login as admin/admin
 * drop down account menu "Admin" and select "Server Info"
 * select tab "Providers"
-* search "hello" :
+* search "witrdotnet" :
 
 | SPI | Providers |
 |:-|:-:|
